@@ -9,7 +9,7 @@ This repository contains the code of the following paper:
 
 ## Training
 
-For DiffAugment-biggan-cifar (used to generate CIFAR10 and CIFAR100 in the paper):
+For **DiffAugment-biggan-cifar** (used to generate CIFAR10 and CIFAR100 in the paper):
 
 Scrips are in DiffAugment-biggan-cifar/scripts. For instance, to run DigGAN on 100% CIFAR-10, one can use
 ```
@@ -28,7 +28,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
 --use_DigGAN --DigGAN_penalty_weight 1000
 ```
 
-For PyTorch-StudioGAN-master (used to generate CUB200 and TINY-ImageNet in the paper):
+For **PyTorch-StudioGAN-master** (used to generate CUB200 and TINY-ImageNet in the paper):
 
 Confgs are in PyTorch-StudioGAN-master/src/configs. To run configs, one can use command like
 ```
