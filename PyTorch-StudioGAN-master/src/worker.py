@@ -376,7 +376,7 @@ class make_worker(object):
                             
                             if self.grad_real_ema is not None:
                                 grad_real = 0.5 * grad_real + 0.5 * self.grad_real_ema
-                                grad_real = 0.5 * grad_fake + 0.5 * self.grad_fake_ema
+                                grad_fake = 0.5 * grad_fake + 0.5 * self.grad_fake_ema
                             dis_acml_loss += ((grad_fake - grad_real) ** 2).mean() * self.diggan_penalty_lambda
                             self.grad_real_ema = grad_real.data
                             self.grad_fake_ema = grad_fake.data
